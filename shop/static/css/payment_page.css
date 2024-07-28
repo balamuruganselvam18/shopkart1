@@ -1,0 +1,94 @@
+/* payment.css */
+
+body {
+    font-family: Noto sans, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.payment-options, .price-details {
+    background: #94da98;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.a {
+    text-align: center;
+    margin-top: 20px;
+}
+/* input-size.css */
+
+.input-size {
+    margin: 20px 0;
+}
+
+#id_card_fields, #id_upi_fields {
+    margin-bottom: 20px;
+}
+
+#id_card_fields label, #id_upi_fields label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#id_card_fields input, #id_upi_fields input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 
+}

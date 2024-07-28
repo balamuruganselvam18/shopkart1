@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/payment_page.css' %}">
+    <title>Payment Page | Online Shopping</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="payment-options">
+            <h2>PAYMENT OPTIONS</h2>
+            <form method="POST" action="{% url 'payment_page' %}">
+                {% csrf_token %}
+                {{ form.payment_method }}
+                <div class="input-size"> 
+                    <div id="id_card_fields" style="display: none;">
+                        {{ form.card_number.label }}: {{ form.card_number }}<br>
+                        {{ form.expiry_date.label }}: {{ form.expiry_date }}<br>
+                        {{ form.cvv.label }}: {{ form.cvv }}<br>
+                    </div>
+
+                    <div id="id_upi_fields" style="display: none;">
+                        {{ form.upi_id.label }}: {{ form.upi_id }}<br>
+                    </div>
+                </div>
+                <div class="a">
+                 <a class="button" href="{% url 'payment_success' %}">Pay Now</a>
+                </div>
+            </form>
+        </div>
+        <div class="price-details">
+            <h2>PRICE DETAILS</h2>
+            <p>Price (1 item): ₹1499</p>
+            <p>Delivery Charges: FREE</p>
+            <h3>Amount Payable: ₹1499</h3>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const paymentMethodRadios = document.querySelectorAll('input[name="payment_method"]');
+            const cardFields = document.getElementById('id_card_fields');
+            const upiFields = document.getElementById('id_upi_fields');
+    
+            function toggleFields() {
+                const selectedMethod = document.querySelector('input[name="payment_method"]:checked').value;
+                cardFields.style.display = selectedMethod === 'ATM' ? 'block' : 'none';
+                upiFields.style.display = selectedMethod === 'UPI' ? 'block' : 'none';
+            }
+    
+            paymentMethodRadios.forEach(radio => {
+                radio.addEventListener('change', toggleFields);
+            });
+    
+            toggleFields();  // Initialize on page load
+        });
+    </script>
+</body>
+</html>

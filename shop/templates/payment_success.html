@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/sucess.css' %}">
+    <title>Payment Success</title>
+</head>
+<body>
+    <h1>Payment Successful!</h1>
+    <p>Thank you for your payment.</p>
+    <button class="button" type="submit"><a href="{% url 'home' %}">home</a></button>
+</body>
+</html>

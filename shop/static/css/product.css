@@ -1,0 +1,153 @@
+/* Product details section styling */
+section.bg-light {
+    background-color: #f8f9fa;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    min-height: 600px;
+}
+
+section.bg-light .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.bg-light .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.bg-light .col-12 {
+    width: 100%;
+}
+
+section.bg-light h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+section.bg-light hr {
+    border-color: #b8bfc2;
+}
+
+section.bg-light .breadcrumb {
+    background: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+section.bg-light .breadcrumb-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+section.bg-light .breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+section.bg-light .pic-box {
+    position: relative;
+    text-align: center;
+}
+
+section.bg-light .pic-box .hot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+section.bg-light .pic-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.bg-light .text-success {
+    color: #28a745 !important;
+}
+
+section.bg-light .text-danger {
+    color: #dc3545 !important;
+}
+
+section.bg-light .text-primary {
+    color: #007bff !important;
+}
+
+section.bg-light .my-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+section.bg-light .my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+section.bg-light .input-group {
+    float: left;
+    /* width: 150px; */
+    margin: 0 ;
+}
+
+section.bg-light .input-group-text {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+section.bg-light .input-group-text:hover {
+    background-color: #218838;
+}
+
+section.bg-light .form-control {
+    border: 1px solid #ced4da;
+}
+
+section.bg-light .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+section.bg-light .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+section.bg-light .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+section.bg-light .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+section.bg-light .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
